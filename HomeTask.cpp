@@ -75,19 +75,19 @@ int main() {
 	vector <int> ans2 = z_function_search_string(text, pattern);
 
 	if (!ans1.empty() || !ans2.empty()) {
-		cout << "Наивный поиск подстроки: ";
+		cout << "РќР°РёРІРЅС‹Р№ РїРѕРёСЃРє РїРѕРґСЃС‚СЂРѕРєРё: ";
 		for (int i = 0; i < ans1.size(); i++) {
 			cout << ans1[i] << " ";
 		}
 
 		cout << endl;
 
-		cout << "Поиск подстроки при помощи z-функции: ";
+		cout << "РџРѕРёСЃРє РїРѕРґСЃС‚СЂРѕРєРё РїСЂРё РїРѕРјРѕС‰Рё z-С„СѓРЅРєС†РёРё: ";
 		for (int i = 0; i < ans2.size(); i++) {
 			cout << ans2[i] << " ";
 		}
 	}
 	else {
-		cout << "Подстрока не содержится";
+		cout << "РџРѕРґСЃС‚СЂРѕРєР° РЅРµ СЃРѕРґРµСЂР¶РёС‚СЃСЏ";
 	}
 }
