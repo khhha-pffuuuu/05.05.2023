@@ -51,13 +51,13 @@ vector<int> z_function(string text) {
 }
 
 vector<int> z_function_search_string(string text, string pattern) {
-	string new_text = pattern + text;
+	string new_text = pattern + '$' + text;
 	vector <int> z = z_function(new_text);
 	vector <int> ans;
 
-	for (int i = pattern.length(); i < z.size(); i++) {
+	for (int i = pattern.length() + 1; i < z.size(); i++) {
 		if (z[i] >= pattern.length()) {
-			ans.push_back(i - pattern.length());
+			ans.push_back(i - pattern.length() - 1);
 		}
 	}
 
